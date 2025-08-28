@@ -1,59 +1,570 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Service</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="ff-roboto">
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="ff-roboto">
     <header class="max-w-[1800px] m-auto">
-       <nav class="md:flex items-center justify-between my-6">
-        <div class="logo ">
-            <a href="#" class="flex gap-2.5">
-                <img src="assets/logo.png" alt="" class="max-w-12">
-                <img src="assets/logo-title.png"  alt="">
-            </a>
+      <nav class="md:flex items-center justify-between my-6">
+        <div class="logo">
+          <a href="#" class="flex gap-2.5">
+            <img src="assets/logo.png" alt="" class="max-w-12" />
+            <img src="assets/logo-title.png" alt="" />
+          </a>
         </div>
-        <div class="nav-options flex ff-inter font-black leading-6 justify-around mt-5 md:m-0 md:gap-5 ">
-            <div class="heart flex gap-2.5 px-9 py-3 bg-[#41ff6b1a] rounded-full">
-                <h3 class="heart-count">
-                    0
-                </h3>
-                <img src="assets/heart.png" alt="img-fluid" class="max-w-7">
-            </div>
-            <div class="coin flex gap-2.5 px-5 py-3.5 bg-[#41ff6b1a] rounded-full">
-                <h3 class="coin-count">
-                    100
-                </h3>
-                <img src="assets/coin.png" alt="" class="max-h-6">
-            </div>
-            <div class="copy flex gap-2.5 px-9 py-3 bg-green-600 rounded-full">
-                <h3 class="copy-count text-white">
-                    0
-                </h3>
-                <p class=" text-white">Copy</p>
-            </div>
+        <div
+          class="nav-options flex ff-inter font-black leading-6 justify-around mt-5 md:m-0 md:gap-5"
+        >
+          <div class="heart flex gap-2.5 px-9 py-3 bg-[#41ff6b1a] rounded-full">
+            <h3 class="heart-count">0</h3>
+            <img src="assets/heart.png" alt="img-fluid" class="max-w-7" />
+          </div>
+          <div
+            class="coin flex gap-2.5 px-5 py-3.5 bg-[#41ff6b1a] rounded-full"
+          >
+            <h3 class="coin-count">100</h3>
+            <img src="assets/coin.png" alt="" class="max-h-6" />
+          </div>
+          <div class="copy flex gap-2.5 px-9 py-3 bg-green-600 rounded-full">
+            <h3 class="copy-count text-white">0</h3>
+            <p class="text-white">Copy</p>
+          </div>
         </div>
-       </nav>
+      </nav>
     </header>
     <main>
-        <section class="hero bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-5">
-            <div class="banner-content text-center">
-                <img src="assets/logo-dark.png" alt="" class="max-w-[92px] m-auto">
-                <h1 class="text-[40px] font-bold text-white py-2.5">
-                    Emergency Service Directory
-                </h1>
-                <p class="text-xl font-semibold text-white">
-                    Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh
-                </p>
-            </div>
-        </section>
+      <!-- Hero section start here -->
+      <section
+        class="hero bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-5"
+      >
+        <div class="banner-content text-center">
+          <img src="assets/logo-dark.png" alt="" class="max-w-[92px] m-auto" />
+          <h1 class="text-[40px] font-bold text-white py-2.5">
+            Emergency Service Directory
+          </h1>
+          <p class="text-xl font-semibold text-white">
+            Government Emergency Services at Your Fingertip – A Project by
+            Government of the People’s Republic of Bangladesh
+          </p>
+        </div>
+      </section>
+      <!-- Hero section end here -->
 
+      <!-- Card section start here -->
+      <section class="card-container pt-12 pb-[86px] bg-[#F5FFF6]">
+        <div class="max-w-[1800px] xl:m-auto mx-7 grid grid-cols-1 gap-5 xl:gap-7 md:grid-cols-2 lg:grid-cols-4">
+          <div class="card p-8 bg-white rounded-xl card-shadow">
+            <div class="brand-content flex justify-between">
+              <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
+                <img src="assets/emergency.png" alt="" class="w-8" />
+              </div>
+              <button class="cursor-pointer">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="service-title text-2xl font-bold text-[#111] pt-4">
+              National Emergency Number
+            </h3>
+            <p class="service-description text-lg text-[#5C5C5C] font-normal">
+              National Emergency
+            </p>
+            <h2 class="service-number text-[32px] font-bold text-[#111] pt-6">
+              999
+            </h2>
+            <div
+              class="category py-1.5 px-4 rounded-full bg-[#F2F2F2] max-w-max"
+            >
+              <h4 class="text-[18px] text-[#5C5C5C] font-normal">All</h4>
+            </div>
+            <div class="dial-btns flex gap-2 pt-6 w-2/2">
+              <button
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i>
+                Copy
+              </button>
+              <button
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+              >
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.21941 9.78068C2.78569 8.34417 1.68309 6.61178 0.988747 4.70468C0.606747 3.66202 0.956747 2.51668 1.74208 1.73135L2.22808 1.24602C2.35874 1.11509 2.51393 1.01123 2.68478 0.940356C2.85563 0.869487 3.03878 0.833008 3.22375 0.833008C3.40871 0.833008 3.59186 0.869487 3.76271 0.940356C3.93356 1.01123 4.08876 1.11509 4.21941 1.24602L5.35741 2.38402C5.48834 2.51467 5.5922 2.66987 5.66307 2.84072C5.73394 3.01157 5.77042 3.19472 5.77042 3.37968C5.77042 3.56465 5.73394 3.7478 5.66307 3.91865C5.5922 4.08949 5.48834 4.24469 5.35741 4.37535L5.07741 4.65535C4.96534 4.7674 4.87643 4.90043 4.81577 5.04685C4.75512 5.19327 4.7239 5.3502 4.7239 5.50868C4.7239 5.66717 4.75512 5.8241 4.81577 5.97051C4.87643 6.11693 4.96534 6.24996 5.07741 6.36202L7.63741 8.92268C7.74947 9.03476 7.8825 9.12366 8.02892 9.18432C8.17533 9.24498 8.33226 9.2762 8.49075 9.2762C8.64923 9.2762 8.80616 9.24498 8.95258 9.18432C9.09899 9.12366 9.23203 9.03476 9.34408 8.92268L9.62475 8.64268C9.75541 8.51176 9.9106 8.40789 10.0815 8.33702C10.2523 8.26615 10.4354 8.22967 10.6204 8.22967C10.8054 8.22967 10.9885 8.26615 11.1594 8.33702C11.3302 8.40789 11.4854 8.51176 11.6161 8.64268L12.7541 9.78068C12.885 9.91134 12.9889 10.0665 13.0597 10.2374C13.1306 10.4082 13.1671 10.5914 13.1671 10.7763C13.1671 10.9613 13.1306 11.1445 13.0597 11.3153C12.9889 11.4862 12.885 11.6414 12.7541 11.772L12.2687 12.2573C11.4834 13.0433 10.3381 13.3933 9.29541 13.0113C7.38831 12.317 5.65593 11.2144 4.21941 9.78068Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Call
+              </button>
+            </div>
+          </div>
+          <div class="card p-8 bg-white rounded-xl card-shadow">
+            <div class="brand-content flex justify-between">
+              <div class="brand-img bg-[#DFEFFF] rounded-2xl p-3.5">
+                <img src="assets/police.png" alt="" class="w-8" />
+              </div>
+              <button class="cursor-pointer">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="service-title text-2xl font-bold text-[#111] pt-4">
+              Police Helpline Number
+            </h3>
+            <p class="service-description text-lg text-[#5C5C5C] font-normal">
+              Police
+            </p>
+            <h2 class="service-number text-[32px] font-bold text-[#111] pt-6">
+              999
+            </h2>
+            <div
+              class="category py-1.5 px-4 rounded-full bg-[#F2F2F2] max-w-max"
+            >
+              <h4 class="text-[18px] text-[#5C5C5C] font-normal">Police</h4>
+            </div>
+            <div class="dial-btns flex gap-2 pt-6 w-2/2">
+              <button
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i>
+                Copy
+              </button>
+              <button
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+              >
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.21941 9.78068C2.78569 8.34417 1.68309 6.61178 0.988747 4.70468C0.606747 3.66202 0.956747 2.51668 1.74208 1.73135L2.22808 1.24602C2.35874 1.11509 2.51393 1.01123 2.68478 0.940356C2.85563 0.869487 3.03878 0.833008 3.22375 0.833008C3.40871 0.833008 3.59186 0.869487 3.76271 0.940356C3.93356 1.01123 4.08876 1.11509 4.21941 1.24602L5.35741 2.38402C5.48834 2.51467 5.5922 2.66987 5.66307 2.84072C5.73394 3.01157 5.77042 3.19472 5.77042 3.37968C5.77042 3.56465 5.73394 3.7478 5.66307 3.91865C5.5922 4.08949 5.48834 4.24469 5.35741 4.37535L5.07741 4.65535C4.96534 4.7674 4.87643 4.90043 4.81577 5.04685C4.75512 5.19327 4.7239 5.3502 4.7239 5.50868C4.7239 5.66717 4.75512 5.8241 4.81577 5.97051C4.87643 6.11693 4.96534 6.24996 5.07741 6.36202L7.63741 8.92268C7.74947 9.03476 7.8825 9.12366 8.02892 9.18432C8.17533 9.24498 8.33226 9.2762 8.49075 9.2762C8.64923 9.2762 8.80616 9.24498 8.95258 9.18432C9.09899 9.12366 9.23203 9.03476 9.34408 8.92268L9.62475 8.64268C9.75541 8.51176 9.9106 8.40789 10.0815 8.33702C10.2523 8.26615 10.4354 8.22967 10.6204 8.22967C10.8054 8.22967 10.9885 8.26615 11.1594 8.33702C11.3302 8.40789 11.4854 8.51176 11.6161 8.64268L12.7541 9.78068C12.885 9.91134 12.9889 10.0665 13.0597 10.2374C13.1306 10.4082 13.1671 10.5914 13.1671 10.7763C13.1671 10.9613 13.1306 11.1445 13.0597 11.3153C12.9889 11.4862 12.885 11.6414 12.7541 11.772L12.2687 12.2573C11.4834 13.0433 10.3381 13.3933 9.29541 13.0113C7.38831 12.317 5.65593 11.2144 4.21941 9.78068Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Call
+              </button>
+            </div>
+          </div>
+          <div class="card p-8 bg-white rounded-xl card-shadow">
+            <div class="brand-content flex justify-between">
+              <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
+                <img src="assets/fire-service.png" alt="" class="w-8" />
+              </div>
+              <button class="cursor-pointer">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="service-title text-2xl font-bold text-[#111] pt-4">
+              Fire Service Number
+            </h3>
+            <p class="service-description text-lg text-[#5C5C5C] font-normal">
+              Fire Service
+            </p>
+            <h2 class="service-number text-[32px] font-bold text-[#111] pt-6">
+              999
+            </h2>
+            <div
+              class="category py-1.5 px-4 rounded-full bg-[#F2F2F2] max-w-max"
+            >
+              <h4 class="text-[18px] text-[#5C5C5C] font-normal">Fire</h4>
+            </div>
+            <div class="dial-btns flex gap-2 pt-6 w-2/2">
+              <button
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i>
+                Copy
+              </button>
+              <button
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+              >
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.21941 9.78068C2.78569 8.34417 1.68309 6.61178 0.988747 4.70468C0.606747 3.66202 0.956747 2.51668 1.74208 1.73135L2.22808 1.24602C2.35874 1.11509 2.51393 1.01123 2.68478 0.940356C2.85563 0.869487 3.03878 0.833008 3.22375 0.833008C3.40871 0.833008 3.59186 0.869487 3.76271 0.940356C3.93356 1.01123 4.08876 1.11509 4.21941 1.24602L5.35741 2.38402C5.48834 2.51467 5.5922 2.66987 5.66307 2.84072C5.73394 3.01157 5.77042 3.19472 5.77042 3.37968C5.77042 3.56465 5.73394 3.7478 5.66307 3.91865C5.5922 4.08949 5.48834 4.24469 5.35741 4.37535L5.07741 4.65535C4.96534 4.7674 4.87643 4.90043 4.81577 5.04685C4.75512 5.19327 4.7239 5.3502 4.7239 5.50868C4.7239 5.66717 4.75512 5.8241 4.81577 5.97051C4.87643 6.11693 4.96534 6.24996 5.07741 6.36202L7.63741 8.92268C7.74947 9.03476 7.8825 9.12366 8.02892 9.18432C8.17533 9.24498 8.33226 9.2762 8.49075 9.2762C8.64923 9.2762 8.80616 9.24498 8.95258 9.18432C9.09899 9.12366 9.23203 9.03476 9.34408 8.92268L9.62475 8.64268C9.75541 8.51176 9.9106 8.40789 10.0815 8.33702C10.2523 8.26615 10.4354 8.22967 10.6204 8.22967C10.8054 8.22967 10.9885 8.26615 11.1594 8.33702C11.3302 8.40789 11.4854 8.51176 11.6161 8.64268L12.7541 9.78068C12.885 9.91134 12.9889 10.0665 13.0597 10.2374C13.1306 10.4082 13.1671 10.5914 13.1671 10.7763C13.1671 10.9613 13.1306 11.1445 13.0597 11.3153C12.9889 11.4862 12.885 11.6414 12.7541 11.772L12.2687 12.2573C11.4834 13.0433 10.3381 13.3933 9.29541 13.0113C7.38831 12.317 5.65593 11.2144 4.21941 9.78068Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Call
+              </button>
+            </div>
+          </div>
+          <div class="call-history bg-white order-last xl:order-none xl:row-span-3 xl:col-start-4 rounded-xl card-shadow p-6">
+            <div class="flex justify-between items-center mb-4">
+              <div class="flex gap-2 items-center">
+                <i class="fa-regular fa-clock"></i>
+                <h3 class="text-xl font-medium text-[#111]">Call History</h3>
+              </div>
+              <button
+                class="ff-inter font-semibold text-white bg-green-600 rounded-full py-3 px-9 cursor-pointer"
+              >
+                Clear
+              </button>
+            </div>
+            <div class="history-content flex justify-between items-center p-4 mb-2 bg-[#FAFAFA] rounded-lg">
+              <div>
+                <h3 class="ff-inter text-lg font-semibold text-[#111] pb-1">
+                  Fire Service Number
+                </h3>
+                <h4 class="text-lg font-normal text-[#5C5C5C]">999</h4>
+              </div>
+              <h3 class="time text-lg font-normal text-[#111]">11:36:58 AM</h3>
+            </div>
+          </div>
+          <div class="card p-8 bg-white rounded-xl card-shadow">
+            <div class="brand-content flex justify-between">
+              <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
+                <img src="assets/ambulance.png" alt="" class="w-8" />
+              </div>
+              <button class="cursor-pointer">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="service-title text-2xl font-bold text-[#111] pt-4">
+              Ambulance Service
+            </h3>
+            <p class="service-description text-lg text-[#5C5C5C] font-normal">
+              Ambulance
+            </p>
+            <h2 class="service-number text-[32px] font-bold text-[#111] pt-6">
+              1994-999999
+            </h2>
+            <div
+              class="category py-1.5 px-4 rounded-full bg-[#F2F2F2] max-w-max"
+            >
+              <h4 class="text-[18px] text-[#5C5C5C] font-normal">Health</h4>
+            </div>
+            <div class="dial-btns flex gap-2 pt-6 w-2/2">
+              <button
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i>
+                Copy
+              </button>
+              <button
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.21941 9.78068C2.78569 8.34417 1.68309 6.61178 0.988747 4.70468C0.606747 3.66202 0.956747 2.51668 1.74208 1.73135L2.22808 1.24602C2.35874 1.11509 2.51393 1.01123 2.68478 0.940356C2.85563 0.869487 3.03878 0.833008 3.22375 0.833008C3.40871 0.833008 3.59186 0.869487 3.76271 0.940356C3.93356 1.01123 4.08876 1.11509 4.21941 1.24602L5.35741 2.38402C5.48834 2.51467 5.5922 2.66987 5.66307 2.84072C5.73394 3.01157 5.77042 3.19472 5.77042 3.37968C5.77042 3.56465 5.73394 3.7478 5.66307 3.91865C5.5922 4.08949 5.48834 4.24469 5.35741 4.37535L5.07741 4.65535C4.96534 4.7674 4.87643 4.90043 4.81577 5.04685C4.75512 5.19327 4.7239 5.3502 4.7239 5.50868C4.7239 5.66717 4.75512 5.8241 4.81577 5.97051C4.87643 6.11693 4.96534 6.24996 5.07741 6.36202L7.63741 8.92268C7.74947 9.03476 7.8825 9.12366 8.02892 9.18432C8.17533 9.24498 8.33226 9.2762 8.49075 9.2762C8.64923 9.2762 8.80616 9.24498 8.95258 9.18432C9.09899 9.12366 9.23203 9.03476 9.34408 8.92268L9.62475 8.64268C9.75541 8.51176 9.9106 8.40789 10.0815 8.33702C10.2523 8.26615 10.4354 8.22967 10.6204 8.22967C10.8054 8.22967 10.9885 8.26615 11.1594 8.33702C11.3302 8.40789 11.4854 8.51176 11.6161 8.64268L12.7541 9.78068C12.885 9.91134 12.9889 10.0665 13.0597 10.2374C13.1306 10.4082 13.1671 10.5914 13.1671 10.7763C13.1671 10.9613 13.1306 11.1445 13.0597 11.3153C12.9889 11.4862 12.885 11.6414 12.7541 11.772L12.2687 12.2573C11.4834 13.0433 10.3381 13.3933 9.29541 13.0113C7.38831 12.317 5.65593 11.2144 4.21941 9.78068Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Call
+              </button>
+            </div>
+          </div>
+          <div class="card p-8 bg-white rounded-xl card-shadow">
+            <div class="brand-content flex justify-between">
+              <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
+                <img src="assets/emergency.png" alt="" class="w-8" />
+              </div>
+              <button class="cursor-pointer">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="service-title text-2xl font-bold text-[#111] pt-4">
+              Women & Child Helpline
+            </h3>
+            <p class="service-description text-lg text-[#5C5C5C] font-normal">
+              Women & Child Helpline
+            </p>
+            <h2 class="service-number text-[32px] font-bold text-[#111] pt-6">
+              109
+            </h2>
+            <div
+              class="category py-1.5 px-4 rounded-full bg-[#F2F2F2] max-w-max"
+            >
+              <h4 class="text-[18px] text-[#5C5C5C] font-normal">Help</h4>
+            </div>
+            <div class="dial-btns flex gap-2 pt-6 w-2/2">
+              <button
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i>
+                Copy
+              </button>
+              <button
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.21941 9.78068C2.78569 8.34417 1.68309 6.61178 0.988747 4.70468C0.606747 3.66202 0.956747 2.51668 1.74208 1.73135L2.22808 1.24602C2.35874 1.11509 2.51393 1.01123 2.68478 0.940356C2.85563 0.869487 3.03878 0.833008 3.22375 0.833008C3.40871 0.833008 3.59186 0.869487 3.76271 0.940356C3.93356 1.01123 4.08876 1.11509 4.21941 1.24602L5.35741 2.38402C5.48834 2.51467 5.5922 2.66987 5.66307 2.84072C5.73394 3.01157 5.77042 3.19472 5.77042 3.37968C5.77042 3.56465 5.73394 3.7478 5.66307 3.91865C5.5922 4.08949 5.48834 4.24469 5.35741 4.37535L5.07741 4.65535C4.96534 4.7674 4.87643 4.90043 4.81577 5.04685C4.75512 5.19327 4.7239 5.3502 4.7239 5.50868C4.7239 5.66717 4.75512 5.8241 4.81577 5.97051C4.87643 6.11693 4.96534 6.24996 5.07741 6.36202L7.63741 8.92268C7.74947 9.03476 7.8825 9.12366 8.02892 9.18432C8.17533 9.24498 8.33226 9.2762 8.49075 9.2762C8.64923 9.2762 8.80616 9.24498 8.95258 9.18432C9.09899 9.12366 9.23203 9.03476 9.34408 8.92268L9.62475 8.64268C9.75541 8.51176 9.9106 8.40789 10.0815 8.33702C10.2523 8.26615 10.4354 8.22967 10.6204 8.22967C10.8054 8.22967 10.9885 8.26615 11.1594 8.33702C11.3302 8.40789 11.4854 8.51176 11.6161 8.64268L12.7541 9.78068C12.885 9.91134 12.9889 10.0665 13.0597 10.2374C13.1306 10.4082 13.1671 10.5914 13.1671 10.7763C13.1671 10.9613 13.1306 11.1445 13.0597 11.3153C12.9889 11.4862 12.885 11.6414 12.7541 11.772L12.2687 12.2573C11.4834 13.0433 10.3381 13.3933 9.29541 13.0113C7.38831 12.317 5.65593 11.2144 4.21941 9.78068Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Call
+              </button>
+            </div>
+          </div>
+          <div class="card p-8 bg-white rounded-xl card-shadow">
+            <div class="brand-content flex justify-between">
+              <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
+                <img src="assets/emergency.png" alt="" class="w-8" />
+              </div>
+              <button class="cursor-pointer">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="service-title text-2xl font-bold text-[#111] pt-4">
+              Anti-Corruption Helpline
+            </h3>
+            <p class="service-description text-lg text-[#5C5C5C] font-normal">
+              Anti-Corruption
+            </p>
+            <h2 class="service-number text-[32px] font-bold text-[#111] pt-6">
+              106
+            </h2>
+            <div
+              class="category py-1.5 px-4 rounded-full bg-[#F2F2F2] max-w-max"
+            >
+              <h4 class="text-[18px] text-[#5C5C5C] font-normal">Govt.</h4>
+            </div>
+            <div class="dial-btns flex gap-2 pt-6 w-2/2">
+              <button
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i>
+                Copy
+              </button>
+              <button
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.21941 9.78068C2.78569 8.34417 1.68309 6.61178 0.988747 4.70468C0.606747 3.66202 0.956747 2.51668 1.74208 1.73135L2.22808 1.24602C2.35874 1.11509 2.51393 1.01123 2.68478 0.940356C2.85563 0.869487 3.03878 0.833008 3.22375 0.833008C3.40871 0.833008 3.59186 0.869487 3.76271 0.940356C3.93356 1.01123 4.08876 1.11509 4.21941 1.24602L5.35741 2.38402C5.48834 2.51467 5.5922 2.66987 5.66307 2.84072C5.73394 3.01157 5.77042 3.19472 5.77042 3.37968C5.77042 3.56465 5.73394 3.7478 5.66307 3.91865C5.5922 4.08949 5.48834 4.24469 5.35741 4.37535L5.07741 4.65535C4.96534 4.7674 4.87643 4.90043 4.81577 5.04685C4.75512 5.19327 4.7239 5.3502 4.7239 5.50868C4.7239 5.66717 4.75512 5.8241 4.81577 5.97051C4.87643 6.11693 4.96534 6.24996 5.07741 6.36202L7.63741 8.92268C7.74947 9.03476 7.8825 9.12366 8.02892 9.18432C8.17533 9.24498 8.33226 9.2762 8.49075 9.2762C8.64923 9.2762 8.80616 9.24498 8.95258 9.18432C9.09899 9.12366 9.23203 9.03476 9.34408 8.92268L9.62475 8.64268C9.75541 8.51176 9.9106 8.40789 10.0815 8.33702C10.2523 8.26615 10.4354 8.22967 10.6204 8.22967C10.8054 8.22967 10.9885 8.26615 11.1594 8.33702C11.3302 8.40789 11.4854 8.51176 11.6161 8.64268L12.7541 9.78068C12.885 9.91134 12.9889 10.0665 13.0597 10.2374C13.1306 10.4082 13.1671 10.5914 13.1671 10.7763C13.1671 10.9613 13.1306 11.1445 13.0597 11.3153C12.9889 11.4862 12.885 11.6414 12.7541 11.772L12.2687 12.2573C11.4834 13.0433 10.3381 13.3933 9.29541 13.0113C7.38831 12.317 5.65593 11.2144 4.21941 9.78068Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Call
+              </button>
+            </div>
+          </div>
+          <div class="card p-8 bg-white rounded-xl card-shadow">
+            <div class="brand-content flex justify-between">
+              <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
+                <img src="assets/emergency.png" alt="" class="w-8" />
+              </div>
+              <button class="cursor-pointer">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="service-title text-2xl font-bold text-[#111] pt-4">
+              Electricity Helpline
+            </h3>
+            <p class="service-description text-lg text-[#5C5C5C] font-normal">
+              Electricity Outage
+            </p>
+            <h2 class="service-number text-[32px] font-bold text-[#111] pt-6">
+              16216
+            </h2>
+            <div
+              class="category py-1.5 px-4 rounded-full bg-[#F2F2F2] max-w-max"
+            >
+              <h4 class="text-[18px] text-[#5C5C5C] font-normal">
+                Electricity
+              </h4>
+            </div>
+            <div class="dial-btns flex gap-2 pt-6 w-2/2">
+              <button
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i>
+                Copy
+              </button>
+              <button
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+              >
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.21941 9.78068C2.78569 8.34417 1.68309 6.61178 0.988747 4.70468C0.606747 3.66202 0.956747 2.51668 1.74208 1.73135L2.22808 1.24602C2.35874 1.11509 2.51393 1.01123 2.68478 0.940356C2.85563 0.869487 3.03878 0.833008 3.22375 0.833008C3.40871 0.833008 3.59186 0.869487 3.76271 0.940356C3.93356 1.01123 4.08876 1.11509 4.21941 1.24602L5.35741 2.38402C5.48834 2.51467 5.5922 2.66987 5.66307 2.84072C5.73394 3.01157 5.77042 3.19472 5.77042 3.37968C5.77042 3.56465 5.73394 3.7478 5.66307 3.91865C5.5922 4.08949 5.48834 4.24469 5.35741 4.37535L5.07741 4.65535C4.96534 4.7674 4.87643 4.90043 4.81577 5.04685C4.75512 5.19327 4.7239 5.3502 4.7239 5.50868C4.7239 5.66717 4.75512 5.8241 4.81577 5.97051C4.87643 6.11693 4.96534 6.24996 5.07741 6.36202L7.63741 8.92268C7.74947 9.03476 7.8825 9.12366 8.02892 9.18432C8.17533 9.24498 8.33226 9.2762 8.49075 9.2762C8.64923 9.2762 8.80616 9.24498 8.95258 9.18432C9.09899 9.12366 9.23203 9.03476 9.34408 8.92268L9.62475 8.64268C9.75541 8.51176 9.9106 8.40789 10.0815 8.33702C10.2523 8.26615 10.4354 8.22967 10.6204 8.22967C10.8054 8.22967 10.9885 8.26615 11.1594 8.33702C11.3302 8.40789 11.4854 8.51176 11.6161 8.64268L12.7541 9.78068C12.885 9.91134 12.9889 10.0665 13.0597 10.2374C13.1306 10.4082 13.1671 10.5914 13.1671 10.7763C13.1671 10.9613 13.1306 11.1445 13.0597 11.3153C12.9889 11.4862 12.885 11.6414 12.7541 11.772L12.2687 12.2573C11.4834 13.0433 10.3381 13.3933 9.29541 13.0113C7.38831 12.317 5.65593 11.2144 4.21941 9.78068Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Call
+              </button>
+            </div>
+          </div>
+          <div class="card p-8 bg-white rounded-xl card-shadow">
+            <div class="brand-content flex justify-between">
+              <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
+                <img src="assets/emergency.png" alt="" class="w-8" />
+              </div>
+              <button class="cursor-pointer">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="service-title text-2xl font-bold text-[#111] pt-4">
+              Brac Helpline
+            </h3>
+            <p class="service-description text-lg text-[#5C5C5C] font-normal">
+              Brac
+            </p>
+            <h2 class="service-number text-[32px] font-bold text-[#111] pt-6">
+              16445
+            </h2>
+            <div
+              class="category py-1.5 px-4 rounded-full bg-[#F2F2F2] max-w-max"
+            >
+              <h4 class="text-[18px] text-[#5C5C5C] font-normal">NGO</h4>
+            </div>
+            <div class="dial-btns flex gap-2 pt-6 w-2/2">
+              <button
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i>
+                Copy
+              </button>
+              <button
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+              >
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.21941 9.78068C2.78569 8.34417 1.68309 6.61178 0.988747 4.70468C0.606747 3.66202 0.956747 2.51668 1.74208 1.73135L2.22808 1.24602C2.35874 1.11509 2.51393 1.01123 2.68478 0.940356C2.85563 0.869487 3.03878 0.833008 3.22375 0.833008C3.40871 0.833008 3.59186 0.869487 3.76271 0.940356C3.93356 1.01123 4.08876 1.11509 4.21941 1.24602L5.35741 2.38402C5.48834 2.51467 5.5922 2.66987 5.66307 2.84072C5.73394 3.01157 5.77042 3.19472 5.77042 3.37968C5.77042 3.56465 5.73394 3.7478 5.66307 3.91865C5.5922 4.08949 5.48834 4.24469 5.35741 4.37535L5.07741 4.65535C4.96534 4.7674 4.87643 4.90043 4.81577 5.04685C4.75512 5.19327 4.7239 5.3502 4.7239 5.50868C4.7239 5.66717 4.75512 5.8241 4.81577 5.97051C4.87643 6.11693 4.96534 6.24996 5.07741 6.36202L7.63741 8.92268C7.74947 9.03476 7.8825 9.12366 8.02892 9.18432C8.17533 9.24498 8.33226 9.2762 8.49075 9.2762C8.64923 9.2762 8.80616 9.24498 8.95258 9.18432C9.09899 9.12366 9.23203 9.03476 9.34408 8.92268L9.62475 8.64268C9.75541 8.51176 9.9106 8.40789 10.0815 8.33702C10.2523 8.26615 10.4354 8.22967 10.6204 8.22967C10.8054 8.22967 10.9885 8.26615 11.1594 8.33702C11.3302 8.40789 11.4854 8.51176 11.6161 8.64268L12.7541 9.78068C12.885 9.91134 12.9889 10.0665 13.0597 10.2374C13.1306 10.4082 13.1671 10.5914 13.1671 10.7763C13.1671 10.9613 13.1306 11.1445 13.0597 11.3153C12.9889 11.4862 12.885 11.6414 12.7541 11.772L12.2687 12.2573C11.4834 13.0433 10.3381 13.3933 9.29541 13.0113C7.38831 12.317 5.65593 11.2144 4.21941 9.78068Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Call
+              </button>
+            </div>
+          </div>
+          <div class="card p-8 bg-white rounded-xl card-shadow">
+            <div class="brand-content flex justify-between">
+              <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
+                <img src="assets/emergency.png" alt="" class="w-8" />
+              </div>
+              <button class="cursor-pointer">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="service-title text-2xl font-bold text-[#111] pt-4">
+              Bangladesh Railway Helpline
+            </h3>
+            <p class="service-description text-lg text-[#5C5C5C] font-normal">
+              Bangladesh Railway
+            </p>
+            <h2 class="service-number text-[32px] font-bold text-[#111] pt-6">
+              163
+            </h2>
+            <div
+              class="category py-1.5 px-4 rounded-full bg-[#F2F2F2] max-w-max"
+            >
+              <h4 class="text-[18px] text-[#5C5C5C] font-normal">Travel</h4>
+            </div>
+            <div class="dial-btns flex gap-2 pt-6 w-2/2">
+              <button
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i>
+                Copy
+              </button>
+              <button
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+              >
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.21941 9.78068C2.78569 8.34417 1.68309 6.61178 0.988747 4.70468C0.606747 3.66202 0.956747 2.51668 1.74208 1.73135L2.22808 1.24602C2.35874 1.11509 2.51393 1.01123 2.68478 0.940356C2.85563 0.869487 3.03878 0.833008 3.22375 0.833008C3.40871 0.833008 3.59186 0.869487 3.76271 0.940356C3.93356 1.01123 4.08876 1.11509 4.21941 1.24602L5.35741 2.38402C5.48834 2.51467 5.5922 2.66987 5.66307 2.84072C5.73394 3.01157 5.77042 3.19472 5.77042 3.37968C5.77042 3.56465 5.73394 3.7478 5.66307 3.91865C5.5922 4.08949 5.48834 4.24469 5.35741 4.37535L5.07741 4.65535C4.96534 4.7674 4.87643 4.90043 4.81577 5.04685C4.75512 5.19327 4.7239 5.3502 4.7239 5.50868C4.7239 5.66717 4.75512 5.8241 4.81577 5.97051C4.87643 6.11693 4.96534 6.24996 5.07741 6.36202L7.63741 8.92268C7.74947 9.03476 7.8825 9.12366 8.02892 9.18432C8.17533 9.24498 8.33226 9.2762 8.49075 9.2762C8.64923 9.2762 8.80616 9.24498 8.95258 9.18432C9.09899 9.12366 9.23203 9.03476 9.34408 8.92268L9.62475 8.64268C9.75541 8.51176 9.9106 8.40789 10.0815 8.33702C10.2523 8.26615 10.4354 8.22967 10.6204 8.22967C10.8054 8.22967 10.9885 8.26615 11.1594 8.33702C11.3302 8.40789 11.4854 8.51176 11.6161 8.64268L12.7541 9.78068C12.885 9.91134 12.9889 10.0665 13.0597 10.2374C13.1306 10.4082 13.1671 10.5914 13.1671 10.7763C13.1671 10.9613 13.1306 11.1445 13.0597 11.3153C12.9889 11.4862 12.885 11.6414 12.7541 11.772L12.2687 12.2573C11.4834 13.0433 10.3381 13.3933 9.29541 13.0113C7.38831 12.317 5.65593 11.2144 4.21941 9.78068Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Call
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Card section end here -->
     </main>
-    <footer>
-        
-    </footer>
-</body>
+  </body>
 </html>
