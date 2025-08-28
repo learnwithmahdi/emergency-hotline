@@ -3,15 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Emergency Service</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header>
-       
+<body class="ff-roboto">
+    <header class="max-w-[1800px] m-auto">
+       <nav class="md:flex items-center justify-between my-6">
+        <div class="logo ">
+            <a href="#" class="flex gap-2.5">
+                <img src="assets/logo.png" alt="" class="max-w-12">
+                <img src="assets/logo-title.png"  alt="">
+            </a>
+        </div>
+        <div class="nav-options flex ff-inter font-black leading-6 justify-around mt-5 md:m-0 md:gap-5 ">
+            <div class="heart flex gap-2.5 px-9 py-3 bg-[#41ff6b1a] rounded-full">
+                <h3 class="heart-count">
+                    0
+                </h3>
+                <img src="assets/heart.png" alt="img-fluid" class="max-w-7">
+            </div>
+            <div class="coin flex gap-2.5 px-5 py-3.5 bg-[#41ff6b1a] rounded-full">
+                <h3 class="coin-count">
+                    100
+                </h3>
+                <img src="assets/coin.png" alt="" class="max-h-6">
+            </div>
+            <div class="copy flex gap-2.5 px-9 py-3 bg-green-600 rounded-full">
+                <h3 class="copy-count text-white">
+                    0
+                </h3>
+                <p class=" text-white">Copy</p>
+            </div>
+        </div>
+       </nav>
     </header>
     <main>
+        <section class="hero bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-5">
+            <div class="banner-content text-center">
+                <img src="assets/logo-dark.png" alt="" class="max-w-[92px] m-auto">
+                <h1 class="text-[40px] font-bold text-white py-2.5">
+                    Emergency Service Directory
+                </h1>
+                <p class="text-xl font-semibold text-white">
+                    Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh
+                </p>
+            </div>
+        </section>
 
     </main>
     <footer>
