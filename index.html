@@ -4,12 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Service</title>
+    <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
   </head>
   <body class="ff-roboto">
     <header class="max-w-[1800px] m-auto">
@@ -24,7 +22,7 @@
           class="nav-options flex ff-inter font-black leading-6 justify-around mt-5 md:m-0 md:gap-5"
         >
           <div class="heart flex gap-2.5 px-9 py-3 bg-[#41ff6b1a] rounded-full">
-            <h3 class="heart-count">0</h3>
+            <h3 class="heart-count" id="total">0</h3>
             <img src="assets/heart.png" alt="img-fluid" class="max-w-7" />
           </div>
           <div
@@ -66,7 +64,7 @@
               <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
                 <img src="assets/emergency.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer">
+              <button class="cursor-pointer count">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -119,7 +117,7 @@
               <div class="brand-img bg-[#DFEFFF] rounded-2xl p-3.5">
                 <img src="assets/police.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer">
+              <button class="cursor-pointer count">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -172,7 +170,7 @@
               <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
                 <img src="assets/fire-service.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer">
+              <button class="cursor-pointer count">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -247,7 +245,7 @@
               <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
                 <img src="assets/ambulance.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer">
+              <button class="cursor-pointer count">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -300,7 +298,7 @@
               <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
                 <img src="assets/emergency.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer">
+              <button class="cursor-pointer count">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -353,7 +351,7 @@
               <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
                 <img src="assets/emergency.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer">
+              <button class="cursor-pointer count">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -406,7 +404,7 @@
               <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
                 <img src="assets/emergency.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer">
+              <button class="cursor-pointer count">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -461,7 +459,7 @@
               <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
                 <img src="assets/emergency.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer">
+              <button class="cursor-pointer count">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -514,7 +512,7 @@
               <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
                 <img src="assets/emergency.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer">
+              <button class="cursor-pointer count">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -566,5 +564,6 @@
       </section>
       <!-- Card section end here -->
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
