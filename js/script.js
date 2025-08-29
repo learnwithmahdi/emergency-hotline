@@ -10,7 +10,6 @@ for (let i = 0; i < heart.length; i++) {
   };
 }
 
-
 // Call History function
 let reservedCoins = 100;
 const totalCoin = document.querySelector("#coin-count");
@@ -31,7 +30,8 @@ function makeCall(serviceName, serviceNumber) {
   const time = currentDate.toLocaleTimeString();
 
   const newHistory = document.createElement("div");
-  newHistory.className = "history-content flex justify-between items-center p-4 mb-2 bg-[#FAFAFA] rounded-lg";
+  newHistory.className =
+    "history-content flex justify-between items-center p-4 mb-2 bg-[#FAFAFA] rounded-lg";
 
   newHistory.innerHTML = `
       <div>
@@ -46,3 +46,20 @@ function makeCall(serviceName, serviceNumber) {
 function clearHistory() {
   callHistory.innerHTML = "";
 }
+
+
+// Copy counter function
+let copyAmount = 0;
+document.querySelectorAll(".copy-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    const hotlineNumber = button
+      .closest(".card")
+      .querySelector(".service-number").innerText;
+
+    navigator.clipboard.writeText(hotlineNumber).then(() => {
+      alert(`Number ${hotlineNumber} copied to clipboard!`);
+      copyAmount++;
+      document.getElementById("copyCount").innerText = `${copyAmount}`;
+    });
+  });
+});
