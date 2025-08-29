@@ -7,12 +7,16 @@
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
   </head>
   <body class="ff-roboto">
     <header class="max-w-[1800px] m-auto">
       <nav class="md:flex items-center justify-between my-6">
-        <div class="logo">
+        <div class="logo lg:block flex justify-center">
           <a href="#" class="flex gap-2.5">
             <img src="assets/logo.png" alt="" class="max-w-12" />
             <img src="assets/logo-title.png" alt="" />
@@ -21,17 +25,17 @@
         <div
           class="nav-options flex ff-inter font-black leading-6 justify-around mt-5 md:m-0 md:gap-5"
         >
-          <div class="heart flex gap-2.5 px-9 py-3 bg-[#41ff6b1a] rounded-full">
+          <div class="heart flex gap-2.5 px-5 md:px-9 py-1.5 md:py-3 bg-[#41ff6b1a] rounded-full">
             <h3 class="heart-count" id="total">0</h3>
             <img src="assets/heart.png" alt="img-fluid" class="max-w-7" />
           </div>
           <div
-            class="coin flex gap-2.5 px-5 py-3.5 bg-[#41ff6b1a] rounded-full"
+            class="coin flex gap-2.5 px-5 md:px-5 py-1.5 md:py-3.5 bg-[#41ff6b1a] rounded-full"
           >
-            <h3 class="coin-count">100</h3>
+            <h3 id="coin-count">100</h3>
             <img src="assets/coin.png" alt="" class="max-h-6" />
           </div>
-          <div class="copy flex gap-2.5 px-9 py-3 bg-green-600 rounded-full">
+          <div class="copy flex gap-2.5 px-5 md:px-9 py-1.5 md:py-3 bg-green-600 rounded-full">
             <h3 class="copy-count text-white">0</h3>
             <p class="text-white">Copy</p>
           </div>
@@ -43,7 +47,7 @@
       <section
         class="hero bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-5"
       >
-        <div class="banner-content text-center">
+        <div class="banner-content text-center mx-5">
           <img src="assets/logo-dark.png" alt="" class="max-w-[92px] m-auto" />
           <h1 class="text-[40px] font-bold text-white py-2.5">
             Emergency Service Directory
@@ -58,13 +62,15 @@
 
       <!-- Card section start here -->
       <section class="card-container pt-12 pb-[86px] bg-[#F5FFF6]">
-        <div class="max-w-[1800px] xl:m-auto mx-7 grid grid-cols-1 gap-5 xl:gap-7 md:grid-cols-2 lg:grid-cols-4">
+        <div
+          class="max-w-[1800px] xl:m-auto mx-7 grid grid-cols-1 gap-5 xl:gap-7 md:grid-cols-2 lg:grid-cols-4"
+        >
           <div class="card p-8 bg-white rounded-xl card-shadow">
             <div class="brand-content flex justify-between">
               <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
                 <img src="assets/emergency.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer count">
+              <button class="cursor-pointer count hover:text-red-500 duration-300">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -84,13 +90,14 @@
             </div>
             <div class="dial-btns flex gap-2 pt-6 w-2/2">
               <button
-                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer hover:border-green-600 hover:text-green-600 duration-200"
               >
                 <i class="fa-regular fa-copy"></i>
                 Copy
               </button>
               <button
-                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer hover:bg-red-600 duration-200"
+                onclick="makeCall('National Emergency Number', '999')"
               >
                 <span
                   ><svg
@@ -117,7 +124,7 @@
               <div class="brand-img bg-[#DFEFFF] rounded-2xl p-3.5">
                 <img src="assets/police.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer count">
+              <button class="cursor-pointer count hover:text-red-500 duration-300">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -137,13 +144,14 @@
             </div>
             <div class="dial-btns flex gap-2 pt-6 w-2/2">
               <button
-                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer hover:border-green-600 hover:text-green-600 duration-200"
               >
                 <i class="fa-regular fa-copy"></i>
                 Copy
               </button>
               <button
-                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer hover:bg-red-600 duration-200"
+                onclick="makeCall('Police Helpline Number', '999')"
               >
                 <span
                   ><svg
@@ -170,7 +178,7 @@
               <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
                 <img src="assets/fire-service.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer count">
+              <button class="cursor-pointer count hover:text-red-500 duration-300">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -190,13 +198,14 @@
             </div>
             <div class="dial-btns flex gap-2 pt-6 w-2/2">
               <button
-                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer hover:border-green-600 hover:text-green-600 duration-200"
               >
                 <i class="fa-regular fa-copy"></i>
                 Copy
               </button>
               <button
-                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer hover:bg-red-600 duration-200"
+                onclick="makeCall('Fire Service Number', '999')"
               >
                 <span
                   ><svg
@@ -225,27 +234,20 @@
                 <h3 class="text-xl font-medium text-[#111]">Call History</h3>
               </div>
               <button
-                class="ff-inter font-semibold text-white bg-green-600 rounded-full py-3 px-9 cursor-pointer"
+                class="ff-inter font-semibold text-white bg-green-600 rounded-full py-3 px-9 cursor-pointer hover:bg-red-600 duration-200""
+                onclick="clearHistory()"
               >
                 Clear
               </button>
             </div>
-            <div class="history-content flex justify-between items-center p-4 mb-2 bg-[#FAFAFA] rounded-lg">
-              <div>
-                <h3 class="ff-inter text-lg font-semibold text-[#111] pb-1">
-                  Fire Service Number
-                </h3>
-                <h4 class="text-lg font-normal text-[#5C5C5C]">999</h4>
-              </div>
-              <h3 class="time text-lg font-normal text-[#111]">11:36:58 AM</h3>
-            </div>
+            <div id="call-history-list"></div>
           </div>
           <div class="card p-8 bg-white rounded-xl card-shadow">
             <div class="brand-content flex justify-between">
               <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
                 <img src="assets/ambulance.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer count">
+              <button class="cursor-pointer count hover:text-red-500 duration-300">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -265,13 +267,14 @@
             </div>
             <div class="dial-btns flex gap-2 pt-6 w-2/2">
               <button
-                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer hover:border-green-600 hover:text-green-600 duration-200"
               >
                 <i class="fa-regular fa-copy"></i>
                 Copy
               </button>
               <button
-                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer hover:bg-red-600 duration-200"
+                onclick="makeCall('Ambulance Service', '1994-999999')"
               >
                 <span>
                   <svg
@@ -298,7 +301,7 @@
               <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
                 <img src="assets/emergency.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer count">
+              <button class="cursor-pointer count hover:text-red-500 duration-300">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -318,13 +321,14 @@
             </div>
             <div class="dial-btns flex gap-2 pt-6 w-2/2">
               <button
-                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer hover:border-green-600 hover:text-green-600 duration-200"
               >
                 <i class="fa-regular fa-copy"></i>
                 Copy
               </button>
               <button
-                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer hover:bg-red-600 duration-200"
+                onclick="makeCall('Women & Child Helpline', '109')"
               >
                 <span>
                   <svg
@@ -351,7 +355,7 @@
               <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
                 <img src="assets/emergency.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer count">
+              <button class="cursor-pointer count hover:text-red-500 duration-300">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -371,13 +375,14 @@
             </div>
             <div class="dial-btns flex gap-2 pt-6 w-2/2">
               <button
-                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer hover:border-green-600 hover:text-green-600 duration-200"
               >
                 <i class="fa-regular fa-copy"></i>
                 Copy
               </button>
               <button
-                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer hover:bg-red-600 duration-200"
+                onclick="makeCall('Anti-Corruption Helpline', '106')"
               >
                 <span>
                   <svg
@@ -404,7 +409,7 @@
               <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
                 <img src="assets/emergency.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer count">
+              <button class="cursor-pointer count hover:text-red-500 duration-300">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -426,13 +431,14 @@
             </div>
             <div class="dial-btns flex gap-2 pt-6 w-2/2">
               <button
-                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer hover:border-green-600 hover:text-green-600 duration-200"
               >
                 <i class="fa-regular fa-copy"></i>
                 Copy
               </button>
               <button
-                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer hover:bg-red-600 duration-200"
+                onclick="makeCall('Electricity Helpline', '16216')"
               >
                 <span
                   ><svg
@@ -457,9 +463,9 @@
           <div class="card p-8 bg-white rounded-xl card-shadow">
             <div class="brand-content flex justify-between">
               <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
-                <img src="assets/emergency.png" alt="" class="w-8" />
+                <img src="assets/brac.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer count">
+              <button class="cursor-pointer count hover:text-red-500 duration-300">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -479,13 +485,14 @@
             </div>
             <div class="dial-btns flex gap-2 pt-6 w-2/2">
               <button
-                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer hover:border-green-600 hover:text-green-600 duration-200"
               >
                 <i class="fa-regular fa-copy"></i>
                 Copy
               </button>
               <button
-                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer hover:bg-red-600 duration-200"
+                onclick="makeCall('Brac Helpline', '16445')"
               >
                 <span
                   ><svg
@@ -510,9 +517,9 @@
           <div class="card p-8 bg-white rounded-xl card-shadow">
             <div class="brand-content flex justify-between">
               <div class="brand-img bg-[#FFE3E2] rounded-2xl p-3.5">
-                <img src="assets/emergency.png" alt="" class="w-8" />
+                <img src="assets/Bangladesh-Railway.png" alt="" class="w-8" />
               </div>
-              <button class="cursor-pointer count">
+              <button class="cursor-pointer count hover:text-red-500 duration-300">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -532,13 +539,14 @@
             </div>
             <div class="dial-btns flex gap-2 pt-6 w-2/2">
               <button
-                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer"
+                class="border-1 w-full rounded-lg border-[#D4D6D5] font-normal py-2.5 cursor-pointer hover:border-green-600 hover:text-green-600 duration-200"
               >
                 <i class="fa-regular fa-copy"></i>
                 Copy
               </button>
               <button
-                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer"
+                class="w-full text-white rounded-lg bg-green-600 flex justify-center items-center gap-1.5 cursor-pointer hover:bg-red-600 duration-200"
+                onclick="makeCall('Bangladesh Railway Helpline', '163')"
               >
                 <span
                   ><svg
